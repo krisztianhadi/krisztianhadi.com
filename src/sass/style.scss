@@ -10,13 +10,15 @@ body {
   margin: 0;
   padding: 5rem;
   min-height: calc(100vh - 10rem);
+  transition: all .5s ease-in-out;
 
   &.night {
     background-color: $dark;
     color: $light;
+    transition: all .5s ease-in-out;
   }
   @media screen and (max-width: $display-small) {
-    font-size: 22px;
+    font-size: 20px;
     padding: 2rem;
     min-height: calc(100vh - 4rem);
   }
@@ -49,7 +51,7 @@ a {
 
   .container {
     display: flex;
-    max-width: 960px;
+    max-width: 62rem;
 
     .col {
       //flex: auto;
@@ -59,7 +61,6 @@ a {
 }
 
 .intro-image {
-  flex: 0 0 33.3333%;
   position: relative;
 
   @media screen and (max-width: $display-small) {
@@ -78,7 +79,6 @@ a {
 }
 
 .text-container {
-  flex: 0 0 66.6666%;
   padding: 3rem;
 
   @media screen and (max-width: $display-small) {
@@ -103,5 +103,18 @@ a {
   }
 
   p {
+  }
+}
+
+.source {
+  position: fixed;
+  bottom: 1rem; right: 1rem;
+
+  a {
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
