@@ -15,6 +15,8 @@ This project based on ["Pug and Sass starter project" by Joshua Azemoh](https://
 5. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
 5. [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) to compress static image files
 6. [Menoe Grotesque Std](http://www.hungarumlaut.com/typefaces/menoe.html) a beautiful font by the talented Adam Katyi. Follow the link to purchase a license to use it.
+5. [night-mode-js](https://github.com/cuddlecheek/night-mode-js) to add a dynamic nigh mode color switch
+
 
 ### To run
 - Execute `npm install` from this directory to install dev dependencies.
