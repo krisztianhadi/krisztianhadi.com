@@ -1,0 +1,27 @@
+// colors
+
+$pink: #ec008b;
+$blue: #00c0ff;
+
+$dark: #222;
+$light: #fefefe;
+// $light: #222;
+// $dark: #fefefe;
+
+// sizes
+
+$display-small: 800px;
+
+// Normalize
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

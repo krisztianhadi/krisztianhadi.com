@@ -1,0 +1,107 @@
+@import "includes/font";
+@import "includes/base";
+
+body {
+  font-family: 'menoe_grotesque_std', Menlo, monospace;
+  color: $dark;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: $light;
+  margin: 0;
+  padding: 5rem;
+  min-height: calc(100vh - 10rem);
+
+  &.night {
+    background-color: $dark;
+    color: $light;
+  }
+  @media screen and (max-width: $display-small) {
+    font-size: 22px;
+    padding: 2rem;
+    min-height: calc(100vh - 4rem);
+  }
+}
+
+.pink { color: $pink; }
+.i { font-style: italic; }
+
+a {
+  font-style: italic;
+  color: $blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  width: calc(100vw - 10rem);
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (max-width: $display-small) {
+    width: calc(100vw - 4rem);
+    min-height: calc(100vh - 4rem);
+  }
+
+  .container {
+    display: flex;
+    max-width: 960px;
+
+    .col {
+      //flex: auto;
+      //border: 1px solid $pink;
+    }
+  }
+}
+
+.intro-image {
+  flex: 0 0 33.3333%;
+  position: relative;
+
+  @media screen and (max-width: $display-small) {
+    display: none;
+  }
+
+  .image-container {
+    display: block;
+    background-color: $pink;
+    background-image: url('../img/krisztian_hadi_highres.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+}
+
+.text-container {
+  flex: 0 0 66.6666%;
+  padding: 3rem;
+
+  @media screen and (max-width: $display-small) {
+    flex: 1;
+  }
+
+  h1, h2 {
+    font-weight: normal;
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+  h1 {
+    margin: 0 0 3rem 0;
+  }
+  h2 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+  }
+
+  .text {
+  }
+
+  p {
+  }
+}
