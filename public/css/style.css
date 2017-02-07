@@ -40,6 +40,8 @@ body { font-family: 'menoe_grotesque_std', Menlo, monospace; color: #222; font-s
 
 body.night { background-color: #222; color: #fefefe; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
 
+body.night .git-icon { fill: #fefefe; }
+
 @media screen and (max-width: 800px) { body { font-size: 20px; padding: 2rem; min-height: -webkit-calc(100vh - 4rem); min-height: calc(100vh - 4rem); } }
 
 .pink { color: #ec008b; }

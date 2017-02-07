@@ -16,6 +16,10 @@ body {
     background-color: $dark;
     color: $light;
     transition: all .5s ease-in-out;
+
+    .git-icon {
+      fill: $light;
+    }
   }
   @media screen and (max-width: $display-small) {
     font-size: 20px;
